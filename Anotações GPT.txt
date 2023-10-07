@@ -1,0 +1,67 @@
+Estou começando a criar um Projeto WEB de um Gestor de Atividades com as seguintes especificações: 
+
+Tela de Login 
+	- Opção de logar ou criar um novo usuário (se já tiver logado, direcionar direto para Tela Principal); 
+	- Opção de cadastrar um novo usuário; 
+
+Tela Principal 
+	- Apresentar a lista de atividades cadastradas do usuário; 
+	- Deve haver um botão que permita criar uma nova atividade; 
+	- Para as atividades existentes deverão existir as opções de Editar, Deletar e Marcar como Concluída;
+	- Após a atualização do estado de cada atividade, a interface deve ser atualizada para refletir o status mais atualizado da lista de atividades de cada usuário; 
+	- Direciona para a tela Créditos; 
+	- Deve permitir o logout da aplicação voltando para a tela de login; 
+
+Telas Cadastro / Edição 
+	- Podem ser feitas separadamente da tela principal ou utilizando-se modais; 
+	- Uma atividade é composta por título, descrição, data de criação, data de conclusão e status (em aberto, concluída); 
+	- Um usuário tem nome, sobronome, data de nascimento, login e senha;
+
+Comportamentos adicionais 
+	- Quando o usuário logar deverá ser previsto se existe alguma atividade com status aberto e data de conclusão já expirada. Em caso positivo o frontend terá que sinalizar para o usuário quais atividades estão em atraso, assim ele pode reprogramar para uma nova de conclusão ou então verificar se ainda é necessária a realização de atividade. 
+
+Tela de Créditos 
+	- Deve conter o nome completo de todos os integrantes do grupo; 
+	- Deve conter opção para voltar à tela principal e caso seja um modal, opção de fechar.
+
+Tendo isso em mente, como posso organizar minhas pastas no VSCODE?
+
+---
+
+Pasta raiz do projeto: Comece criando uma pasta para o seu projeto web, por exemplo, "GestorDeAtividades".
+
+Pasta "public": Esta pasta conterá os arquivos públicos que serão acessíveis diretamente pelo navegador. Ela deve conter os arquivos HTML, CSS, JavaScript e outros recursos estáticos. Por exemplo:
+
+	-"index.php": Seu arquivo PHP principal que servirá como ponto de entrada para o aplicativo.
+	-"css": Coloque seus arquivos CSS aqui.
+	-"js": Se você estiver usando JavaScript, coloque os arquivos JavaScript aqui.
+	-"img": Armazene suas imagens e outros recursos visuais aqui.
+
+Pasta "includes" (ou "partials"): Esta pasta pode conter arquivos PHP reutilizáveis, como cabeçalhos rodapés e outros componentes que são incluídos em várias páginas. Isso ajuda na organização do código. Por exemplo:
+
+	-"header.php": Cabeçalho comum para todas as páginas.
+	-"footer.php": Rodapé comum para todas as páginas.
+
+Pasta "pages" (ou "views"): Aqui você pode organizar suas páginas PHP. Cada página pode estar em sua própria pasta ou diretamente nesta pasta, dependendo da complexidade do seu projeto. Por exemplo:
+
+	"login.php": Página de login.
+	"principal.php": Página principal com a lista de atividades.
+	"cadastro.php": Página de cadastro de atividades.
+	"edicao.php": Página de edição de atividades.
+	"creditos.php": Página de créditos.
+
+Pasta "config": Mantenha arquivos de configuração aqui, como configurações de banco de dados ou variáveis globais.
+
+Pasta "controllers": Se você estiver usando uma arquitetura MVC (Model-View-Controller), você pode colocar seus controladores PHP aqui para lidar com a lógica de negócios.
+
+Pasta "models": Aqui, você pode armazenar modelos PHP que representam os dados e a lógica de acesso aos dados do seu aplicativo.
+
+Pasta "utils" (ou "helpers"): Coloque utilitários ou funções de uso geral aqui.
+
+Arquivos na raiz: Além das pastas mencionadas acima, você pode ter arquivos na raiz do projeto, como "composer.json" (se estiver usando o Composer para gerenciar dependências PHP), "README.md" (para documentação), etc.
+
+
+
+
+
+
