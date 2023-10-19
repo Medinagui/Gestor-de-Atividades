@@ -61,7 +61,63 @@ Pasta "utils" (ou "helpers"): Coloque utilitários ou funções de uso geral aqu
 Arquivos na raiz: Além das pastas mencionadas acima, você pode ter arquivos na raiz do projeto, como "composer.json" (se estiver usando o Composer para gerenciar dependências PHP), "README.md" (para documentação), etc.
 
 
+=====
 
+Como eu começo criando o site?
+
+-----
+
+Para começar a criar o seu site de Gestor de Atividades em PHP, siga os passos abaixo:
+
+1. **Configuração do Ambiente de Desenvolvimento:**
+   - Certifique-se de ter um ambiente de desenvolvimento web configurado. Isso geralmente envolve a instalação de um servidor web (como Apache), PHP e um sistema de gerenciamento de banco de dados (por exemplo, MySQL). Você também pode usar pacotes como XAMPP ou WAMP para simplificar essa configuração.
+
+2. **Estrutura do Projeto:**
+   - Crie a estrutura de pastas conforme mencionado anteriormente. Isso ajudará na organização do seu código.
+
+3. **Defina o Banco de Dados:**
+   - Projete a estrutura do banco de dados para armazenar informações de usuários e atividades. Você pode usar o PHPMyAdmin ou outra ferramenta de gerenciamento de banco de dados para criar as tabelas necessárias.
+
+4. **Desenvolvimento da Tela de Login:**
+   - Comece com a implementação da tela de login. Crie o arquivo "login.php" na pasta "pages" (ou "views"). Você precisará de um formulário HTML para que os usuários insiram suas informações de login. Use PHP para processar os dados do formulário e verificar as credenciais no banco de dados.
+
+5. **Criação de Novo Usuário:**
+   - Implemente a funcionalidade de criação de um novo usuário, se o usuário escolher essa opção na tela de login. Crie um formulário HTML e um script PHP para inserir os dados do novo usuário no banco de dados.
+
+6. **Desenvolvimento da Tela Principal:**
+   - Crie a tela principal ("principal.php") na pasta "pages". Esta página deve exibir a lista de atividades do usuário, permitir a criação de novas atividades, edição, exclusão e marcação de atividades como concluídas. Você precisará de consultas SQL para recuperar e atualizar as atividades no banco de dados.
+
+7. **Telas de Cadastro/Edição:**
+   - Desenvolva as telas de cadastro e edição de atividades ("cadastro.php" e "edicao.php"). Essas telas devem conter formulários para inserir/editar os detalhes das atividades.
+
+8. **Comportamentos Adicionais:**
+   - Implemente a funcionalidade de verificar se existem atividades em atraso quando o usuário faz login. Você pode fazer isso consultando o banco de dados e exibindo um aviso na tela principal.
+
+9. **Tela de Créditos:**
+   - Crie a tela de créditos ("creditos.php") que exibe os nomes dos membros da equipe.
+
+10. **Teste e Depuração:**
+   - Teste cada parte do seu site para garantir que tudo funcione conforme o esperado. Certifique-se de lidar com erros e exceções adequadamente.
+
+11. **Estilização:**
+    - Use CSS para estilizar suas páginas e torná-las visualmente atraentes.
+
+12. **Segurança:**
+    - Certifique-se de adotar práticas de segurança, como validação de entrada, prevenção contra SQL injection e proteção de senhas com hash.
+
+13. **Implantação:**
+    - Escolha um servidor web para implantar seu site. Certifique-se de configurar o ambiente de produção de acordo com as necessidades do PHP e do banco de dados.
+
+14. **Documentação:**
+    - Documente o seu código, incluindo comentários explicativos e instruções para configurar o projeto em outros ambientes.
+
+15. **Testes de Usuário:**
+    - Peça a amigos ou colegas para testar o site e fornecer feedback.
+
+16. **Lançamento:**
+    - Após testar e depurar completamente, você pode lançar o site para os usuários finais.
+
+Lembre-se de que o desenvolvimento web é um processo iterativo. À medida que você avança, pode ser necessário fazer ajustes e melhorias no seu projeto. Boa sorte com o desenvolvimento do seu Gestor de Atividades em PHP!
 
 
 

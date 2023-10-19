@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples</title>
+</head>
+<body>
+    <center>
+        <form method="get" action="../backend/calculadora_simples.php">
+            Valor A: <input type="number" name="valorA" step="0.1" required/>
+            <br>
+            <br>
+            Valor B: <input type="number" name="valorB" step="0.1" required/>
+            <br>
+            <br>
+            
+            <input type="radio" id="soma" name="operacao" value="+" checked required>
+            <label for="soma">+</label>
+
+            <input type="radio" id="subtracao" name="operacao" value="-" required>
+            <label for="subtracao">-</label>
+
+            <input type="radio" id="multiplicacao" name="operacao" value="*" required>
+            <label for="multiplicacao">*</label>
+
+            <input type="radio" id="divisao" name="operacao" value="/" required>
+            <label for="divisao">/</label>
+
+            <br>
+            <br>
+            <input type="submit" value="Calcular"/>
+        </form>
+    </center>
+</body>
+</html>

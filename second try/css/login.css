@@ -1,0 +1,24 @@
+input {
+    margin-bottom: 10px;
+}
+
+div > h3 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    height: 100vh; /* Define a altura para centralizar na janela de visualização */
+  }
+  
+  .centrada {
+    /* Estilos para a div centralizada */
+    max-width: 600px;
+    margin: auto;
+    padding: 10px;
+    background-color: antiquewhite;
+  }
+
+  
